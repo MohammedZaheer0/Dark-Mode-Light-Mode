@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eef519840c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dark Mode and Light Mode</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="outerdiv">
+
+            <div class="leftdiv">
+
+                <img src="zaheer-high-resolution-logo-transparent.png" alt="">
+
+                <div class="detailes">
+                    <h1>I'm Mohammed Zaheer</h1>
+                    <p>This is my official portfolio website to showcase my all works related to web development and UI design</p>
+                    <button>Download CV</button>
+                </div>
+
+                <div class="socailmedia">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+
+            </div>
+
+            <div class="rightdiv">
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#" class="suncolor">HOME</a></li>
+                        <li><a href="#" class="suncolor">ABOUT</a></li>
+                        <li><a href="#" class="suncolor">PORTFOLIO</a></li>
+                        <li><a href="#" class="suncolor">SERVICES</a></li>
+                        <li><a href="#" class="suncolor">HIRE ME</a></li>
+                        <li><a href="#" class="suncolor"><i class="fa-regular fa-sun" id="sun"></i></a></li>
+                    </ul>
+                </div>
+                    <img src="pexels-thirdman-8489309-removebg-preview.png" alt="">
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script>
+        let Sun = document.getElementById("sun");
+        Sun.addEventListener("click",function(){
+
+
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                Sun.classList.remove("fa-sun");
+                Sun.classList.add("fa-moon");
+                document.body.style.background = "black";
+                document.body.style.color= "white";
+            }
+            else{
+                Sun.classList.add("fa-sun");
+                Sun.classList.remove("fa-moon");
+                document.body.style.background = "white";
+                document.body.style.color= "black";
+            }
+        })
+    </script>
+
+</body>
+</html>
